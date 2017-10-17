@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Control Flow Exercise</title>
+    <script>
+      let my_name = "Sean Bates";
+      console.log("My name is " + my_name + ".");
+      console.log("My name has " + my_name.length + " characters.")
+    </script>
+  </head>
+  <body>
+    <h1>See console for outputs</h1>
+    <script>
+      let pi = 3.14159;
+      console.log(pi * Math.random());
+
+      //grade calculator
+      let grade = 84;
+      let letter_grade;
+      if (grade >= 90) {letter_grade = "A"}
+      else if (grade >= 80) {letter_grade = "B"}
+      else if (grade >= 70) {letter_grade = "C"}
+      else if (grade >= 60) {letter_grade = "D"}
+      else if (grade < 60) {letter_grade = "F"}
+      else {letter_grade = "Invalid grade"};
+
+      console.log("Letter grade: " + letter_grade);
+
+      let word_count = 12;
+      if (word_count) {
+        console.log("Word count is not 0");
+      } else {
+        console.log("Word count is 0");
+      }
+
+      word_count ? console.log("Ternary - count is not 0") : console.log("Ternary - count is 0");
+    </script>
+  </body>
+</html>
