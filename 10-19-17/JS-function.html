@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Function</title>
+  </head>
+  <body>
+    <h1>See console for output</h1>
+    <script>
+      const getSquare = a => a * a;
+      console.log(getSquare(3));
+
+      let letterGrade;
+      const getLetterGrade = (grade) => {
+        let letterGrade;
+        if (grade >= 90) {
+          letterGrade = "A";
+        } else if (grade >= 80) {
+          letterGrade = "B";
+        } else if (grade >= 70) {
+          letterGrade = "C";
+        } else if (grade >= 60) {
+          letterGrade = "D";
+        } else {
+          letterGrade = "F";
+        }
+        return letterGrade;
+      };
+      console.log(getLetterGrade(98));
+    </script>
+  </body>
+</html>
